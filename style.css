@@ -149,3 +149,11 @@ main{
     box-shadow: 0 0 1rem var(--text);
     animation: beat .5s ease infinite;
 }
+
+/* ***************************************FOODZONE SECTION************************* */
+
+#foodzone{
+    height: 100vh;
+    padding-top: 10rem;
+    background: var(--blue-deep);
+}
