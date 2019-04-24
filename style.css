@@ -83,7 +83,7 @@ body{
         justify-content: space-between;
         align-items: center;
         flex: 1;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     
 }
@@ -105,7 +105,7 @@ body{
 }
 /* *******************************************MAIN SECTION***************************************** */
 main{
-    padding-top: 22rem;
+    padding-top: 15rem;
     min-height:100vh;
     background-image: linear-gradient( var(--grey),var(--text)),url(images/hero.jpg);
     background-position: bottom;
@@ -154,6 +154,6 @@ main{
 
 #foodzone{
     height: 100vh;
-    padding-top: 10rem;
+    padding-top: 15rem;
     background: var(--blue-deep);
 }
