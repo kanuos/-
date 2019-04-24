@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 
+:root{
+    --blue-deep: rgb(43,90,129);
+    --blue:rgba(43, 90, 129,.25);
+    --green:rgba(66, 224, 158, 0.25);
+    --grey: rgba(190, 183, 164, 0.52);
+    --white:#FFFF;
+    --shadow: #ccc;
+    --text:rgba(80, 81, 79, 0.61);
+}
+
+/* ***************************************************************** */
 *,
 *::after,
 *::before{
@@ -15,4 +26,78 @@ html{
 
 body{
     font-family: 'Shadows Into Light', cursive;
+    color: var(--grey);
+}
+.navbar{
+    justify-content: space-between;
+    align-items: flex-start;
+    background : url(images/nav-hero.jpg);
+    background-size: cover;
+    border-bottom: .1rem solid var(--text);
+}
+@media (min-width:60rem){
+    .navbar{
+        height: 10rem;
+        
+    }
+}
+
+.navbar-toggler,
+.navbar-toggler:focus{
+    font-size: 3rem;
+    color: var(--white);
+    border: .1rem solid var(--white);
+    outline: none;
+}
+.navbar-brand img{
+    display: block;
+    width: 70%;
+    height: auto;
+    margin-top: -3rem;
+    flex-basis: 60%;
+}
+@media (min-width:60rem){
+    .navbar-brand{
+        flex-basis: 30%;
+    }
+    .navbar-brand img{
+        width: 15rem;
+        height: auto;
+    }
+}
+
+#navItems nav{
+    height: 100vh;
+    /* margin-top: -1rem; */
+    font-size: 2rem;
+    flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+@media (min-width:60rem){
+    #navItems nav{
+        height: 5rem;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 1;
+    }
+}
+
+.nav-link{
+    color: var(--white);
+}
+.nav-link:hover{
+    color: var(--shadow);
+}
+
+main{
+    padding-top: 20rem;
+    min-height:100vh;
+    background-image: linear-gradient( var(--grey),var(--text)),url(images/hero.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
