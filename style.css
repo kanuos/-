@@ -142,7 +142,7 @@ main{
 .btn-hero:link{
     margin-top: 10rem;
     padding: 1rem 3rem;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -155,5 +155,15 @@ main{
 #foodzone{
     height: 100vh;
     padding-top: 15rem;
-    background: var(--blue-deep);
+    background:  linear-gradient(var(--blue),var(--green)),url(images/foodzone.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+@media (min-width:768px){
+    #foodzone{
+        padding-top: 11rem;
+    }
 }
