@@ -159,8 +159,16 @@ main{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
+.paragraph{
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--shadow);
+}
 
 @media (min-width:768px){
     #foodzone{
