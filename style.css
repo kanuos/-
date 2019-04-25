@@ -175,3 +175,24 @@ main{
         padding-top: 11rem;
     }
 }
+
+
+/* **********************************CARD SECTION************************************* */
+#cooking{
+    min-height: 90vh;
+}
+.card{
+    border-radius: 4rem;
+    overflow: hidden;
+    margin: 1rem;
+}
+.card img{
+    height: 30rem;
+    object-fit: cover;
+}
+
+/* @media (min-width:992px){
+    .row{
+        display: none;
+    }
+} */
