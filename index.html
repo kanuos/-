@@ -24,7 +24,7 @@
                     <a href="#home" class="nav-link py-3">Home</a>
                     <a href="#foodzone" class="nav-link py-3">What is FoodZone</a>
                     <a href="#cooking" class="nav-link py-3">Learn Cooking</a>   
-                    <a href="#" class="nav-link py-3">Welcome</a>    
+                    <a href="#modal" class="nav-link py-3" id="sign">Sign In &parallel; Sign Up;</a>    
                 </nav>
             </div>
         </div>
@@ -141,10 +141,8 @@
         <div class="btn btn-lg btn-danger d-block w-25 mx-auto py-2 px-4 text-uppercase">Click here to load more</div>
     </section>
 
-
-    <!-- MODAL for sign up/log in -->
-
-
+    
+    <!-- *************************FOOTER SECTION****************************************** -->
 
     <footer class="sticky-bottom py-5">
         <h3 class="h3 text-center text-white">Imaginary Project By Sounak Mukherjee</h3> 
@@ -153,9 +151,35 @@
             <a href="tel:+16072805640" class="text-white">&#128242;Call Me</a>
         </p>
     </footer>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+    <!-- MODAL for sign up/log in -->
+    <section id="modal">
+        <form class="form-group">
+            <div class="form-image text-center">
+                <img src="images/user-sign-in.png" alt="sign in user" class="img-fluid">
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Username</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter username or email id">
+            </div>
+            
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Password</span>
+                </div>
+                <input type="password" class="form-control" placeholder="Enter password">
+            </div>
+            <button id="signIn" class="btn btn-lg btn-primary w-25 py-2 px-4 my-4" type="submit">Sign In</button>
+            <br><br>
+            <span class="lead text-dark">Not a member of Foodzone? <a href="#" class="tex-description-none text-primary">Join Now</a></span>
+            <span class="lead text-danger cross">&#9587;</span>
+        </form>
+    </section>   
+
+
+   
     <script src="app.js"></script>
 </body>
 </html>
